@@ -125,17 +125,17 @@ h3 {
 	background-image:-webkit-linear-gradient(
       rgba(200, 55, 200, 0.25),
       rgba(200, 74, 0, 0.28)
-    ), url(img/chicago.jpg);
+    ), url(img/Chicago.jpg);
 
 	background-image:-o-linear-gradient(
       rgba(200, 55, 200, 0.25),
       rgba(200, 74, 0, 0.28)
-    ), url(img/chicago.jpg);
+    ), url(img/Chicago.jpg);
 
 	background-image:linear-gradient(
       rgba(200, 55, 200, 0.25),
       rgba(200, 74, 0, 0.28)
-    ), url(img/chicago.jpg);
+    ), url(img/Chicago.jpg);
 
 	background-size:cover;
 	background-position: center;
