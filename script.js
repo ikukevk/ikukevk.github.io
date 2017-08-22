@@ -2,7 +2,7 @@ $('li').on("click", function() {
 
 	var filterValue = $(this).data('filter');
 	$('.overlay_container').hide();
-	$('.item-'+ filterValue).css('display' , 'grid');
+	$('.item-'+ filterValue).css('display' , 'grid').css('display' , '-ms-grid');
 
 	$(this).addClass('selected').siblings().removeClass('selected');
 	$(this).css('color' , 'rgba(0,0,0,1)').siblings().css('color' , 'rgba(0,0,0,.5)');
