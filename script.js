@@ -1,0 +1,66 @@
+$('li').on("click", function() {
+
+	var filterValue = $(this).data('filter');
+	$('.overlay_container').hide();
+	$('.item-'+ filterValue).css('display' , 'grid');
+
+	$(this).addClass('selected').siblings().removeClass('selected');
+	$(this).css('color' , 'rgba(0,0,0,1)').siblings().css('color' , 'rgba(0,0,0,.5)');
+
+});
+
+
+// $('nav a').on("click", function() {
+// $(this).addClass('selected_nav').siblings().removeClass('selected_nav');
+// });
+
+$("nav a").on("click", function() {
+	var filterValue = $(this).data('navigation-item');
+	var offSetPosition = $(".section-" + filterValue).offset().top;
+	$("body , html").animate( {
+		scrollTop: offSetPosition  
+	});
+	$(".mobile_menu").css('left' , '-100%');
+});
+
+$(".desktop_menu img").on("click", function() {
+	$(".mobile_menu").css('left' , '0');
+});
+
+// $(document).ready(function () {
+//     $('iframe').mouseover(function() {
+//         $('iframe').each(function () {
+//             $(this)[0].contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+//         });
+//     });
+// });
+
+$(".modal").on("click", function() {
+	var filterValue = $(this).data('navigation-item');
+
+	$(".modal_popup" + filterValue).removeClass("hidden");
+	$(".background_modal").fadeIn();
+});
+
+$(".close_window").on("click", function() {
+	// $(".popup_window").addClass("hidden");
+	$(".popup_window").addClass("hidden");
+	$(".background_modal").fadeOut();
+	$(".modal_popup2")
+	[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+});
+
+$(window).on("scroll", function() {
+	var topPosition = $(".video_container").offset().top;
+	var currentPosition = $(this).scrollTop();
+	// $(".header_container h1").text(currentPosition);
+	// $(".header_container h2").text(topPosition);
+	if (currentPosition  > topPosition/2) {
+		$(".overlay_container:nth-child(odd)").css('transform', 'translateX(0)');
+		$(".overlay_container:nth-child(even)").css('transform', 'translateX(0)');
+		} else {
+		console.log("nothing happened");
+		}
+
+});
+
