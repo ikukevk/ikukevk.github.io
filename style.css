@@ -428,6 +428,7 @@ PART 2
 	margin-left:2%;
 	margin-right: 2%;
 	transform: translateX(-100%);
+	
 	-webkit-transform: translateX(-100%);
 	    -ms-transform: translateX(-100%);
 
@@ -441,6 +442,7 @@ PART 2
 .overlay_container:nth-child(even) {
 	margin-right:2%;
 	transform: translateX(100%);
+
 	-webkit-transform: translateX(100%);
 	    -ms-transform: translateX(100%);
     -webkit-transition: all 600ms cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -960,6 +962,8 @@ input[type="submit"], select {
 	opacity: 0;
 
 }
+
+
 
 
 /*=================================================================*/
