@@ -1,0 +1,875 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@import "fonts.less";
+
+
+
+/*General*/
+
+* {
+  box-sizing: border-box;
+}
+
+
+a {
+    font-family:"UniveBla";
+}
+
+p, figcaption {
+    font-family:"SerifRom";
+    font-size:10px;
+}
+
+h1 {
+    font-family:"UniveBla";
+    font-size:27px;
+    line-height: 1;
+}
+h3 {
+    font-family:"UniveCon";
+    font-size: 18px;
+    margin:0;
+}
+
+h2 {
+    font-family:"UniveBla";
+    font-size:23px;
+}
+
+li {
+    list-style: none;
+}
+
+h4 {
+    font-family:"UniveCon";
+    font-size:14px;
+    margin:0;
+    padding:0;
+}
+
+
+.clearfix:after {
+    content:"";
+    display: table;
+    clear:both;
+}
+
+body, html {
+   /* max-width:1024px;*/
+    width:100%;
+    margin:0 auto;
+}
+
+.main_container {
+    margin:0 auto;
+    /*width:80.762%;*/
+    width:827.0028px;
+    height:68px;
+
+}
+
+header{
+    top:0;
+    background-color:#edefef;
+    /*max-width:1024px;*/
+    width:100%;
+    margin:0 auto;
+    color:#E67725;
+    cursor:pointer;
+    z-index: 850;
+    position:fixed; 
+}  
+
+.header_logo {
+    float:left;
+        img {
+            height:68px;
+            width:68px;
+        }
+}
+
+.header_nav {
+    float:right;
+        li {
+            display:inline-block;
+            margin-right:35px;
+                &:last-child{
+                    margin-right:0;
+                    font-family:"UniveBla";
+                }
+            }
+        img {
+            width:39px;
+            height:36px;
+            margin-right:6px;
+        }
+        a {
+            color:#E67725;
+            text-decoration: none;
+        }        
+}
+
+
+/*main {
+    top:68px;
+    width:827.0028px;
+    margin:0 auto 45px;
+}*/
+
+.main_left, .main_right {
+    /* height:595px;*/
+     padding-bottom:10px;
+    
+}
+
+main {
+    top:68px;
+    width:827.0028px;
+    margin:68px auto 45px;
+    a {
+    margin-top:20px;
+    margin-bottom:23px;
+    display:block;
+    color:#edbb00;
+    text-decoration: none;
+    }
+    h1 {
+    margin: 0;
+    padding-bottom: 7px;
+    }
+    h2 {
+    margin-bottom:14px;
+    }
+    h3 {
+    margin-bottom:30px;
+    }
+}
+
+#catalog_back {
+    width:20px;
+    height:20px;
+    padding-right:3px;
+}
+
+.main_left h2{
+    margin:0;
+    padding-top:5px;
+    line-height: 1;
+}
+
+.additional_info h4{
+    padding-top: 5px;
+}
+
+
+.main_left {
+    float:left;
+    width:235px;
+    list-style: none;
+    background-color: #eceeee;
+    border-radius: 10px;
+    position:relative;
+    padding:10px;
+        h4 {
+            margin:0;
+        }
+        #border_bottom {
+            border-bottom:1px solid #ecba1d;
+            padding-bottom:12px;
+        }
+}
+
+
+
+.bookmark_icon {
+    position:absolute;
+    display:block;
+    top:0;
+    right:0;
+    width:16px;
+    height:23px;
+    transform: translate(-105%,75%);
+    -webkit-transform: translate(-105%,75%);
+    -moz-transform: translate(-105%,75%);
+    -o-transform: translate(-105%,75%);
+}
+
+
+hr {
+    width:209px;
+    background-color: #ecba1d;
+    margin:0 auto;
+}
+
+/*Shortcut Section*/
+
+.keyboard_shortcuts h4 {
+        padding:0;    
+}
+.keyboard_shortcuts #shortcut1  {
+    width:30px;
+    height:30px;
+}
+
+
+.keyboard_shortcuts #shortcut2  {
+    width:71px;
+    height:30px;
+}
+
+.keyboard_shortcuts ul {
+        margin:0;
+        padding-top:10px;
+        padding-bottom:8px;
+        padding-left:0;
+            li {
+                margin-bottom: 5px;
+            }
+            img {
+                float:left;
+            }
+
+            p {
+                float:right;
+                display:inline;
+                width:60%;
+                margin:0;
+                padding:0 0 5px;
+            }
+            #bezier {
+                margin-top:7px;
+            }
+        }
+
+
+
+
+
+.questions {
+    padding-top: 56px;
+    text-align: center;
+    a {
+    background-color:#39a6e2;
+    display:inline-block;
+    color:#fff;
+    padding:5px 13px;
+    border-radius: 25px;
+    margin:15px;
+    /*width:80px;*/
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+        p {
+            width:80%;
+            margin:0 auto;
+            text-align: center;
+            font-size:12px;
+        }
+}
+
+/*============================================*/
+/*Right Video Section */
+
+.main_right {
+    float:right;
+    width:580px;
+    ul {
+        list-style: none;
+        padding:0;
+        margin:0;
+    }
+}
+
+.main_right {
+    margin-bottom: 30px;
+    p {
+        margin:0;
+        font-size: 14px;
+        float:left;
+    }
+
+    .right2 {
+        float:right;
+    }
+    img {
+        width:55px;
+        height:50px;
+    }
+}
+
+.author {
+    margin-top:35px;
+
+        a {
+        margin:0;
+        display:inline;
+        font-size: 15px;
+        text-decoration:none;
+        text-transform: uppercase;
+        color:#39a6e2;
+
+    }
+}
+
+.main_right .right2 img {
+    width:26px;
+    height:24px;
+}
+
+
+.progress_line {
+    width:37px;
+    height:3px;
+    background-color: #edefef;
+    position: absolute;
+    top:50%;
+    left:-50%;
+    
+    transform: translate(25%,-50%);
+    -webkit-transform: translate(25%,-50%);
+    -moz-transform: translate(25%,-50%);
+    -o-transform: translate(25%,-50%);
+}
+
+.yellow {
+    background-color:#ecba1d;
+
+}
+
+.main_right .progress ul {
+    width:110%;
+     li {
+    float:left;
+    width:16.6666%;
+    margin:0 auto;
+    position: relative;
+    }
+}
+
+
+
+.resources li {
+    float:left;
+    margin-left:20px;
+    width:20%;
+    /*display:inline-block;*/
+    list-style-type: disc;
+    &:first-child {
+    margin-left:none;
+    };
+    a {
+        font-family:"SerifRom";
+        margin-top:3px;
+    }
+}
+
+
+
+/*Footer*/
+footer {
+    
+   /* max-width: 1024px;*/
+    width:100%;
+    margin:0 auto;
+    background-color: #767676;
+}
+
+footer .bottom {
+    .main_container;
+    text-decoration: none;
+    color:#eceeee;
+    background-color:#767676;
+    font-family:"SerifRom";
+    height:68px; 
+  
+
+}
+
+footer p {
+    margin-top:23px;
+    display:inline-block;
+    float:left; 
+    font-size:11px;
+   
+}
+
+footer div.bottom ul {
+    float:right;
+        li {
+            display:inline-block;
+            margin-right:23px;
+              &:last-child {
+                margin-right:0;
+              }
+        }
+        a{  font-size:11px;
+              font-family:"SerifRom";
+             text-decoration: none;
+             color:#eceeee;
+             text-transform:capitalize;
+        }
+}
+
+
+
+
+
+
+/* Course Preview Modal*/
+#congrats_modal {
+  cursor: pointer;
+}
+
+.header_container {
+/*    position:absolute;
+    top:6%;
+    left:16%;*/
+    text-align: center;
+        h1 {
+            font-family: "UniveBla";
+            font-size: 50px;
+            line-height: 1;
+            padding-top:70px;
+            color:#E67824;
+        }
+        h2 {
+            font-family:"UniveBla";
+            font-size: 19px;
+            text-align: center;
+            margin-bottom: 31px;
+        }
+        h3 {
+            width:370px;
+            margin:0 auto;
+            padding-bottom:36px;
+        }
+        #honeycomb_page {
+            padding-top: 13px;
+            border-radius: 33px;
+            text-align: center;
+            background-color: #39A6E2;
+            margin: 0 auto 10px;
+            /* width: 103%; */
+            display: block;
+            width: 340px;
+            height: 51px;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #fff;
+
+        }
+        #dashboard {
+            padding-top: 13px;
+            border-radius: 33px;
+            border:5px solid #E67824;
+            text-align: center;
+            background-color: #fff;
+            margin: 25px auto 0;
+            /* width: 103%; */
+            display: block;
+            width: 340px;
+            height: 51px;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #E67824; 
+        }
+        
+        img {
+            padding-top:40px;
+            width:250px;
+            height:250px;
+        }
+}
+
+
+
+
+/*.wrap h2 {
+  font-family: sans-serif;
+  font-size: 30px;
+  color: #E67824;
+  text-transform: uppercase;
+}*/
+
+/*.wrap p {
+  font-size: 12px;
+  margin-bottom: 20px;
+}*/
+.wrap {
+  position: fixed;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  width: 900px ;
+  z-index: 999;
+}
+aside.overlay {
+  display: none;
+  background: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 950;
+}
+.overlay_container {
+  position: relative;
+  border-radius: 30px;
+  background: #eceeee;
+  text-align: left;
+/*  min-height: 600px;*/
+  min-width: 670px;
+  width: 50%;
+  z-index: 100;
+  top:0;
+  padding: ;
+  margin: 0 auto;
+}
+.close {
+  background-color:#ECEEEE;
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width:28px;
+  height:28px;
+  cursor:pointer;
+
+}
+.wrap ul {
+  list-style: none;
+}
+
+/*.wrap h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+*/
+
+
+/*====================================================*/
+/*Drop Down Menu*/
+
+.drop_down {
+
+height:100%; 
+text-align: center;
+padding-top:60px;
+/*position:absolute;*/
+position:fixed;
+/*right:0;*/
+right:-275px;
+transition: all 0.3s ease-out;
+top:0;
+width:275px;
+z-index:9999;
+background-color:#E67725;
+  ul {
+    padding:0;
+    text-align:center;
+    text-transform: uppercase;
+  }
+  li {
+    border-bottom:1px solid #fff;
+    padding-bottom:11px;
+    padding-top:15px;
+    list-style:none;
+  } 
+  a {
+    color:#fff;
+    text-decoration: none;
+    font-size:22px;
+    font-family:"UniveCon";
+  }
+}
+
+
+ .shift {
+      right:0px;
+    }
+
+  .social_media li {
+  float:left;
+  width:16.6666%;
+  border:none;
+}
+
+#riley1992 {
+  width:192px;
+  height:141px;
+}
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
