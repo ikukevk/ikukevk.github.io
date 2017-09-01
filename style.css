@@ -146,8 +146,9 @@ h3 {
 	-ms-grid-row:2;
 	/*background-color:orange;*/
 	margin-bottom: 2em;
+	background-image:url(img/hero_picture02.jpg);
 
-
+/*
 	background-image:-webkit-linear-gradient(
       rgba(200, 55, 200, 0.25),
       rgba(200, 74, 0, 0.28)
@@ -162,6 +163,8 @@ h3 {
       rgba(200, 55, 200, 0.25),
       rgba(200, 74, 0, 0.28)
     ), url(img/Chicago.jpg);
+	
+*/
 
 	background-size:cover;
 	background-position: center;
