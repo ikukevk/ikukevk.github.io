@@ -848,6 +848,8 @@ PART 2
 	width: 85%;
 	height:auto;
 	margin-right:2%;
+	border-radius: 50%;
+   	box-shadow: 0 2px 2px 1px;
 }
 
 .resume {
