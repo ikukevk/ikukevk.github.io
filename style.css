@@ -1051,6 +1051,10 @@ input[type="submit"], select {
 		font-size: 1.375em;
 		line-height: 1.13636364em;
 	}
+	
+.text_container p {
+	font-size: .85em
+	}
 
 input[type="submit"], select {
 	font-size: 1em;
@@ -1063,7 +1067,13 @@ input[type="submit"], select {
 }
 
 .resume {
-	display:block;
+	display: grid;
+	display: -ms-grid;
+	-ms-grid-column:1;
+	-ms-grid-column-span:1;
+    	text-align: center;
+    	grid-template-columns: 1fr 1fr;
+   	margin-left: 18%;
 	text-align: center;
 }
 
@@ -1080,8 +1090,7 @@ input[type="submit"], select {
 .header .desktop_menu a:nth-child(1) {
 	display:-webkit-box;
 	display:flex;
-		
-		display:-ms-flexbox;
+	display:-ms-flexbox;
 
 }
 
