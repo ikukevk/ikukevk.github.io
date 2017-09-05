@@ -779,7 +779,27 @@ PART 2
     -ms-grid-column:1;
     -ms-grid-column-span:3;
     margin-top: .5%;
-    background-image: url(img/img_01.jpg);
+/*     background-image: url(img/img_01.jpg); */
+	
+	background-image:linear-gradient(
+      rgba(190, 190, 197, 0.5),
+      rgba(0, 15, 200, 0.5)
+    ), url(img/chicago2.jpg);
+
+
+    background-image: -webkit-linear-gradient(
+      rgba(190, 190, 197, 0.5),
+      rgba(0, 15, 200, 0.5)
+    ), url(img/chicago2.jpg);
+    background-image: -o-linear-gradient(
+      rgba(190, 190, 197, 0.5),
+      rgba(0, 15, 200, 0.5)
+    ), url(img/chicago2.jpg);
+    background-image: -moz-linear-gradient(
+      rgba(190, 190, 197, 0.5),
+      rgba(0, 15, 200, 0.5)
+    ), url(img/chicago2.jpg);
+	
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -871,7 +891,9 @@ PART 2
 		-webkit-transition: color 0.5s ease;
 		-o-transition: color 0.5s ease;
 }
-
+.resume i {
+	padding-right:1%;
+}
 
 
 .resume a:nth-child(2) {
