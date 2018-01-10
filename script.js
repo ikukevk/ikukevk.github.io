@@ -5,7 +5,7 @@ $('li').on("click", function() {
 	$('.item-'+ filterValue).css('display' , 'grid').css('display' , '-ms-grid');
 
 	$(this).addClass('selected').siblings().removeClass('selected');
-	$(this).css('color' , 'rgba(0,0,0,1)').siblings().css('color' , 'rgba(0,0,0,.5)');
+	// $(this).css('color' , 'rgba(0,0,0,1)').siblings().css('color' , 'rgba(0,0,0,.5)');
 
 });
 
