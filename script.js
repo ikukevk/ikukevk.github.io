@@ -50,22 +50,22 @@ $(".close_window").on("click", function() {
 	[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
 });
 
-$(window).on("scroll", function() {
-	var topPosition = $(".video_container").offset().top;
-	var currentPosition = $(this).scrollTop();
-	// $(".header_container h1").text(currentPosition);
-	// $(".header_container h2").text(topPosition);
-	if (currentPosition  > topPosition/2) {
-		console.log("should move");
+// $(window).on("scroll", function() {
+// 	var topPosition = $(".video_container").offset().top;
+// 	var currentPosition = $(this).scrollTop();
+// 	// $(".header_container h1").text(currentPosition);
+// 	// $(".header_container h2").text(topPosition);
+// 	if (currentPosition  > topPosition/2) {
+// 		console.log("should move");
 	
-		$(".overlay_container:nth-child(odd)").css('transform', 'translateX(0)');
-		$(".overlay_container:nth-child(even)").css('transform', 'translateX(0)');
-		} else {
-		console.log("nothing happened");
+// 		$(".overlay_container:nth-child(odd)").css('transform', 'translateX(0)');
+// 		$(".overlay_container:nth-child(even)").css('transform', 'translateX(0)');
+// 		} else {
+// 		console.log("nothing happened");
 		
-		}
+// 		}
 
-});
+// });
 
 
 
