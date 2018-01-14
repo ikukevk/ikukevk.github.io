@@ -503,6 +503,17 @@ h3 {
 	grid-template-columns: 1fr;
 	-ms-grid-columns:1fr;
 }
+.overlay_container:nth-child(7) {
+	grid-row:5;
+	-ms-grid-row:5;
+	grid-column: 1 / 2;
+	-ms-grid-column:1;
+	-ms-grid-column-span:1;
+	display:grid;
+	display: -ms-grid;
+	grid-template-columns: 1fr;
+	-ms-grid-columns:1fr;
+}
 
 /*==================================
 PART 2
@@ -519,23 +530,11 @@ PART 2
 	display:none;
 }
 
-.overlay_container:nth-child(7) {
+.overlay_container:nth-child(8) {
 	grid-row:3;
 	-ms-grid-row:3;
 	grid-column: 1 / 2;
 	-ms-grid-column:1;
-	-ms-grid-column-span:1;
-	display:grid;
-	display: -ms-grid;
-	grid-template-columns: 1fr;
-	-ms-grid-columns:1fr;
-}
-
-.overlay_container:nth-child(8) {
-	grid-row:3;
-	-ms-grid-row:3;
-	grid-column: 2 / 3;
-	-ms-grid-column:2;
 	-ms-grid-column-span:1;
 	display:grid;
 	display: -ms-grid;
@@ -544,10 +543,10 @@ PART 2
 }
 
 .overlay_container:nth-child(9) {
-	grid-row:4;
-	-ms-grid-row:4;
-	grid-column: 1 / 2;
-	-ms-grid-column:1;
+	grid-row:3;
+	-ms-grid-row:3;
+	grid-column: 2 / 3;
+	-ms-grid-column:2;
 	-ms-grid-column-span:1;
 	display:grid;
 	display: -ms-grid;
@@ -558,8 +557,8 @@ PART 2
 .overlay_container:nth-child(10) {
 	grid-row:4;
 	-ms-grid-row:4;
-	grid-column: 2 / 3;
-	-ms-grid-column:2;
+	grid-column: 1 / 2;
+	-ms-grid-column:1;
 	-ms-grid-column-span:1;
 	display:grid;
 	display: -ms-grid;
@@ -568,10 +567,10 @@ PART 2
 }
 
 .overlay_container:nth-child(11) {
-	grid-row:3;
-	-ms-grid-row:3;
-	grid-column: 1 / 2;
-	-ms-grid-column:1;
+	grid-row:4;
+	-ms-grid-row:4;
+	grid-column: 2 / 3;
+	-ms-grid-column:2;
 	-ms-grid-column-span:1;
 	display:grid;
 	display: -ms-grid;
@@ -582,6 +581,18 @@ PART 2
 .overlay_container:nth-child(12) {
 	grid-row:3;
 	-ms-grid-row:3;
+	grid-column: 1 / 2;
+	-ms-grid-column:1;
+	-ms-grid-column-span:1;
+	display:grid;
+	display: -ms-grid;
+	grid-template-columns: 1fr;
+	-ms-grid-columns:1fr;
+}
+
+.overlay_container:nth-child(13) {
+	grid-row:3;
+	-ms-grid-row:3;
 	grid-column: 2 / 3;
 	-ms-grid-column:2;
 	-ms-grid-column-span:1;
@@ -591,7 +602,7 @@ PART 2
 	-ms-grid-columns:1fr;
 }
 
-.overlay_container:nth-child(13) {
+.overlay_container:nth-child(14) {
 	grid-row:4;
 	-ms-grid-row:4;
 	grid-column: 1 / 2;
@@ -603,7 +614,7 @@ PART 2
 	-ms-grid-columns:1fr;
 }
 
-.overlay_container:nth-child(14) {
+.overlay_container:nth-child(15) {
 	grid-row:4;
 	-ms-grid-row:4;
 	grid-column: 2 / 3;
@@ -615,7 +626,7 @@ PART 2
 	-ms-grid-columns:1fr;
 }
 
-.overlay_container:nth-child(15) {
+.overlay_container:nth-child(16) {
 	grid-row:5;
 	-ms-grid-row:5;
 	grid-column: 1 / 2;
@@ -679,8 +690,13 @@ PART 2
 	background-color:rgba(42,42,42,.5);
 	padding:2%;
 }
-
 .project_01 {
+		background: no-repeat; 
+		background-position:center;
+		background-size: cover;
+		background-image:url('img/lower_thirds.png');
+	}
+.project_02 {
 		background: no-repeat; 
 		background-position:center;
 		background-size: cover;
@@ -709,7 +725,7 @@ PART 2
 
 
 
-.project_02 {
+.project_03 {
 	/*	background:url(img_01.jpg) no-repeat fixed;*/
 /*	background-image:linear-gradient(
       rgba(200, 55, 200, 0.25),
@@ -737,14 +753,14 @@ PART 2
 		background-size: cover;
 }
 
-.project_03 {
+.project_04 {
 
 		background-image:url(img/event_promo.jpg);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
 }
-.project_04 {
+.project_05 {
 
 		background-image:url(img/real_estate_promo.jpg);
 		background-repeat: no-repeat;
@@ -752,7 +768,7 @@ PART 2
 		background-size: cover;
 }
 
-.project_05 {
+.project_06 {
 		background-image:linear-gradient(
         rgba(222, 245, 231, 0.25), 
         rgba(27, 24, 23, 0.28)
@@ -777,7 +793,7 @@ PART 2
 		background-size: cover;
 }
 
-.project_06 {
+.project_07 {
 		background-image:linear-gradient(
         rgba(222, 245, 231, 0.25), 
         rgba(27, 24, 23, 0.28)
@@ -802,37 +818,37 @@ PART 2
 		background-size: cover;
 }
 
-.project_07 {
-		background-image:linear-gradient(
-        rgba(222, 245, 231, 0.25), 
-        rgba(27, 24, 23, 0.28)
-    ),  url(img/beo.jpg);
-
-		background-image: -webkit-linear-gradient(
-        rgba(222, 245, 231, 0.25), 
-        rgba(27, 24, 23, 0.28)
-    ),  url(img/beo.jpg);
-		
-		background-image: -o-linear-gradient(
-        rgba(222, 245, 231, 0.25), 
-        rgba(27, 24, 23, 0.28)
-    ),  url(img/beo.jpg);
-
-		background-image: -moz-linear-gradient(
-        rgba(222, 245, 231, 0.25), 
-        rgba(27, 24, 23, 0.28)
-    ),  url(img/beo.jpg);
-
-
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-}
-
 .project_08 {
 		background-image:linear-gradient(
         rgba(222, 245, 231, 0.25), 
         rgba(27, 24, 23, 0.28)
+    ),  url(img/beo.jpg);
+
+		background-image: -webkit-linear-gradient(
+        rgba(222, 245, 231, 0.25), 
+        rgba(27, 24, 23, 0.28)
+    ),  url(img/beo.jpg);
+		
+		background-image: -o-linear-gradient(
+        rgba(222, 245, 231, 0.25), 
+        rgba(27, 24, 23, 0.28)
+    ),  url(img/beo.jpg);
+
+		background-image: -moz-linear-gradient(
+        rgba(222, 245, 231, 0.25), 
+        rgba(27, 24, 23, 0.28)
+    ),  url(img/beo.jpg);
+
+
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+}
+
+.project_09 {
+		background-image:linear-gradient(
+        rgba(222, 245, 231, 0.25), 
+        rgba(27, 24, 23, 0.28)
     ),  url(img/calculator.jpg);
 
 
@@ -857,7 +873,7 @@ PART 2
 }
 
 
-.project_09 {
+.project_10 {
 		background: no-repeat; 
 		background-position:center;
 		background-size: cover;
@@ -886,7 +902,7 @@ PART 2
 
 
 
-.project_10 {
+.project_11 {
 	/*	background:url(img_01.jpg) no-repeat fixed;*/
 	background-image:linear-gradient(
       rgba(200, 55, 200, 0.25),
@@ -912,14 +928,14 @@ PART 2
 		background-size: cover;
 }
 
-.project_11 {
+.project_12 {
 
 		background-image:url(img/everlast.jpg);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
 }
-.project_12 {
+.project_13 {
 
 		background-image:url(img/central_park.jpg);
 		background-repeat: no-repeat;
@@ -927,7 +943,7 @@ PART 2
 		background-size: cover;
 }
 
-.project_13 {
+.project_14 {
 
 		background-image:url(img/chicago2.jpg);
 		background-repeat: no-repeat;
